@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# Component
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+    - simple function/ class behaves like component
 
-## Available Scripts
+    - react applications are component based applications.
 
-In the project directory, you can run:
+    - as a react developer we can reuse the components.
 
-### `yarn start`
+    - we have two types of components
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+    1) functional level components (stateless components)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+    2) class level components (stateful components)
 
-### `yarn test`
+    - class level components have more benefits compared to functional components.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    - class level supports oops where as functional level doesn't support oops.
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    - In class level components maintaining the lifecycle is easy compared functional components.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Functional component
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    • A functional component is just a plain JavaScript function which accepts props as an argument and returns a React element.
+    • We cannot use in functional components in setState or lifecycle method().
+    • Less coding.
+    • Code usability is less.
 
-### `yarn eject`
+Class level Component
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+    • A class component requires you to extend from React.Component and create a render() function which returns a React element to be rendered.
+    • In class-based component, props are accessible via this.props.
+    • We can use all lifecycle hooks are coming from the React.Component which you extend from in class components.
+    • More coding.
+    • Code usability is high.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+React Component creation steps:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1. create the react application
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+   > create-react-app component-ex
 
-## Learn More
+2. switch to react application
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   > cd component-ex
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. add the Material UI Framework
 
-### Code Splitting
+   - Material UI used to develop Rich UI.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   - we will add Material UI by using yarn tool.
 
-### Analyzing the Bundle Size
+     > yarn add @material-ui/core @material-ui/icons --save
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   - Typography used to display the styled text.
+     import Typography from '@material-ui/core/Typography';
 
-### Making a Progressive Web App
+   Refer: https://material-ui.com/api/typography/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Material UI
 
-### Advanced Configuration
+    Typography
+    => align
+    => color
+    => variant
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+    Button
+    variant = "contained / outlined"
+    color=""
+    size="small / medium/ large"
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+    ButtonGroup
+    variant="contained / text / outlined"
 
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    IconButton
+    => startIcon
+    => endIcon
