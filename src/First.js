@@ -7,22 +7,28 @@ function First() {
   return (
     <div>
       <Typography variant="h1" color="initial">
-        First Component
+        H1
       </Typography>
       <Typography variant="h2" color="inherit" align="center">
-        Function Component
+        H2
       </Typography>
       <Typography variant="h3" color="primary" align="right">
-        Function Component
+        H3
+      </Typography>
+      <Typography variant="subtitle1" color="primary" align="right">
+        subtitle1
+      </Typography>
+      <Typography variant="subtitle2" color="primary" align="right">
+        subtitle2
       </Typography>
       <Typography variant="body1" color="error">
-        Error Display
+        Body1
       </Typography>
       <Typography variant="h4" color="secondary">
-        Secondary Display
+        Secondary Display H4
       </Typography>
       <Typography variant="h5" color="textPrimary">
-        textPrimary display
+        textPrimary display H5
       </Typography>
       <Typography variant="h6" color="textSecondary">
         textSecondary display

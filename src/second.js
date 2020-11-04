@@ -55,20 +55,22 @@ function Second() {
 
       <br></br>
       <br></br>
-      <Button variant="text">Default</Button>
-      <Button variant="text" color="primary">
+      <Button size="small" variant="text">
+        Default
+      </Button>
+      <Button size="medium" variant="text" color="primary">
         Primary
       </Button>
-      <Button variant="text" color="primary">
+      <Button size="large" variant="text" color="primary">
         Secondary
       </Button>
-      <Button variant="text" color="primary">
+      <Button size="small" variant="text" color="primary">
         TextPrimary
       </Button>
-      <Button variant="text" color="primary">
+      <Button size="medium" variant="text" color="primary">
         Error
       </Button>
-      <Button variant="text" disabled>
+      <Button size="small" variant="text" disabled>
         Disabled
       </Button>
 
